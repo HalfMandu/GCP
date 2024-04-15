@@ -2,16 +2,16 @@ import express from "express";
 
 const app = express();
 
-const __dirname = "angular-app/dist/angular-app/browser";
-
 app.use(express.json());
-app.use(express.static(__dirname));
+
+// app.use(express.static('public'));
+app.use(express.static('public/browser'));
 
 const port = process.env.port || 8080;
 
 //Serving on port 8080
 app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
+  console.log(`Listening on port ${port} v3...`);
 });
 
 //Basic GET hello world route

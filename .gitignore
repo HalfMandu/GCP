@@ -5,6 +5,7 @@ angular-app/dist
 angular-app/tmp
 angular-app/out-tsc
 angular-app/bazel-out
+public/
 
 # Node
 angular-app/node_modules
